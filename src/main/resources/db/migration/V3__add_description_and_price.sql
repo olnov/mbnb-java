@@ -1,0 +1,3 @@
+ALTER TABLE spaces
+ADD COLUMN description TEXT,
+ADD COLUMN price FLOAT;
