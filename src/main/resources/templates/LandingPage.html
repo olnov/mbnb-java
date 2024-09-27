@@ -14,6 +14,7 @@
 <body>
 <div style="margin-top:100px;">
 <div th:replace="fragments/header :: header"></div>
+<div th:insert="fragments/loader :: loader"></div>
 <div style="color: white; text-align: center;">
     <h1>Welcome to MakersBnB!</h1>
 </div>
@@ -26,12 +27,12 @@
 <br>
 <br>
 <div th:replace="fragments/promotions :: promotions"></div>
-<div sec:authorize="isAuthenticated()">
-    <p>You are logged in!</p>
-    <form name="logoutForm" th:action="@{/logout}" method="post">
-        <button class="button" type="submit" value="Log out">Log out</button>
-    </form>
-</div>
+<!--<div sec:authorize="isAuthenticated()">-->
+<!--    <p>You are logged in!</p>-->
+<!--    <form name="logoutForm" th:action="@{/logout}" method="post">-->
+<!--        <button class="button" type="submit" value="Log out">Log out</button>-->
+<!--    </form>-->
+<!--</div>-->
 <div th:include="fragments/footer :: footer"></div>
 </div>
 </body>
